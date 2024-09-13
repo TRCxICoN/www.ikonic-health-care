@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy - IKONIC Healthcare</title>
+    <!--Links-->
+    <link rel="stylesheet" href="nav and footer.css">
+    <link rel="stylesheet" href="pharmacy.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-nav-container">
+                <img src="logo final11.png" alt="Hospital Logo" class="logo">
+                <nav class="nav-bar">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="doctors.html">Doctors</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="pharmacy.html">Pharmacy</a>
+                    <a href="billing-summary.html">Billing Summary</a>
+                </nav>
+            </div>
+            <h1 class="hospital-name">IKONIC Healthcare</h1>
+        </div>
+    </header>
+    
+    <main>
+        <form action="billing summary.html" method="POST" id="pharmacy-form">
+            <img src="logo final11.png" alt="Hospital Logo" class="form-logo">
+            <!-- Medicine Selection -->
+            <label for="medicine">Select Medicine:</label>
+            <select id="medicine" name="medicine">
+                <option value="aspirin" data-price="10" data-image="Aspirin.jpg">Aspirin 500mg - $10</option>
+                <option value="ibuprofen" data-price="15" data-image="Ibuprogen.jpg">Ibuprofen 200mg - $15</option>
+                <option value="paracetamol" data-price="20" data-image="Paracetamol.jpg">Paracetamol 500mg - $20</option>
+                <option value="amoxicillin" data-price="12" data-image="Amoxicillin.jpg">Amoxicillin 500mg - $12</option>
+                <option value="pills" data-price="30" data-image="Medicine5.jpg">Penodol- $30</option>
+                <option value="metformin" data-price="18" data-image="Metformin.jpg">Metformin 500mg - $18</option>
+                <option value="lisinopril" data-price="22" data-image="Lisinopril.jpg">Lisinopril 10mg - $22</option>
+                <option value="loratadine" data-price="8" data-image="Loratadine.jpg">Loratadine 10mg - $8</option>
+                <option value="omeprazole" data-price="14" data-image="Omeprzole.jpg">Omeprazole 20mg - $14</option>
+                <option value="cetirizine" data-price="11" data-image="Cetirizine.jpg">Cetirizine 10mg - $11</option>
+                <option value="hydrochlorothiazide" data-price="17" data-image="Hydrochlorothiazide.jpg">Hydrochlorothiazide 25mg - $17</option>
+                <option value="prednisone" data-price="25" data-image="Prednisone.jpg">Prednisone 10mg - $25</option>
+            </select>
+            
+
+            <!-- Quantity Input -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <!-- Add to Cart Button -->
+            <button type="submit">Add to Cart</button>
+
+            <!-- Clear Cart Button -->
+            <button type="button" class="clear-button">Clear Cart</button>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2024 IKONIC Healthcare. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="pharmacy.html">Pharmacy</a>
+                <a href="billing-summary.html">Billing Summary</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

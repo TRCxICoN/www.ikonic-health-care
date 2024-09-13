@@ -1,0 +1,134 @@
+/* General content padding for consistent spacing */
+.content {
+    padding: 20px;
+}
+
+/* Main service content - desktop layout */
+.main-service-content {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Padding around the content */
+}
+
+.main-service-img {
+    flex: 0 0 auto; /* Prevent resizing of the image */
+    max-width: 50%; /* Limit image width to 50% of the container */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.main-service-details {
+    flex: 1; /* Allow text content to take remaining space */
+    padding-left: 40px; /* Space between image and text */
+    padding: 20px; /* Padding inside the details box */
+    border-radius: 5px; /* Rounded corners for the details box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Services intro section styling */
+#services-intro {
+    margin-bottom: 40px; /* Space below the intro section */
+    text-align: center; /* Center text within the section */
+}
+
+#services-intro h2 {
+    margin: 0 0 10px; /* Space below the heading */
+}
+
+#services-intro p {
+    margin: 0; /* Remove default margin */
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Main service details styling */
+.main-service-details h2 {
+    margin-top: 0; /* Remove default top margin */
+}
+
+.main-service-details p {
+    margin-top: 10px; /* Space above paragraphs */
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Other services section styling */
+#other-services {
+    margin-bottom: 40px; /* Space below the section */
+}
+
+#other-services h2 {
+    text-align: center; /* Center heading within the section */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Flex layout for service boxes */
+.service-boxes {
+    display: flex; /* Align service boxes in a row */
+    flex-wrap: wrap; /* Wrap boxes to the next line if necessary */
+    gap: 20px; /* Space between service boxes */
+    justify-content: center; /* Center the boxes horizontally */
+}
+
+.service-box {
+    flex: 1 1 200px; /* Flexbox settings for responsive boxes */
+    background-color: #e9ecef; /* Light grey background */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 5px; /* Rounded corners for the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the box */
+}
+
+.service-box img {
+    border-radius: 5px; /* Rounded corners for the image */
+    width: 100%; /* Full width of the container */
+    max-width: 150px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.service-box h3 {
+    margin: 10px 0; /* Space above and below heading */
+}
+
+.service-box p {
+    margin: 0; /* Remove default margin */
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Patient registration section styling */
+#patient-registration {
+    text-align: center; /* Center content within the section */
+}
+
+.registration-link {
+    display: inline-block; /* Button will not stretch to full width */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.registration-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Mobile responsiveness - stack content vertically */
+@media (max-width: 768px) {
+    .main-service-content {
+        display: block; /* Stack the content vertically on mobile */
+        text-align: center; /* Center the content */
+    }
+
+    .main-service-img {
+        max-width: 100%; /* Full width for mobile */
+        margin: 0 auto 20px; /* Center the image horizontally */
+    }
+
+    .main-service-details {
+        padding: 20px; /* Maintain padding */
+        box-shadow: none; /* Remove box shadow on mobile for simplicity */
+        text-align: left; /* Keep text left-aligned */
+    }
+}
+

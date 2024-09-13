@@ -1,0 +1,97 @@
+/* Styling for the form */
+form {
+    padding: 20px; /* Padding inside the form */
+    background-color: #fff; /* White background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Center align form with margin */
+    width: 300px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    margin-bottom: 87px; /* Margin at the bottom */
+}
+
+/* Styling for form labels */
+label {
+    display: block; /* Block display for full-width labels */
+    margin-bottom: 10px; /* Margin below labels */
+}
+
+/* Styling for number inputs and select elements */
+input[type="number"],
+select {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding inside input/select */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 20px; /* Padding inside button */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Margin above button */
+}
+
+/* Hover effect for primary buttons */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for clear buttons */
+.clear-button {
+    width: 300px;
+    
+    background-color: #6c757d; /* Gray background color */
+}
+
+/* Hover effect for clear buttons */
+.clear-button:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Margin between buttons */
+button + button {
+    margin-left: 10px; /* Space between buttons */
+}
+/* Styling for the logo inside the form */
+.form-logo {
+    position: absolute; /* Position the logo inside the form */
+    bottom: 12px; /* Position from the bottom of the form*/
+    top: 5px; /* Distance from the top of the form */
+    left: 1px; /* Distance from the left of the form */
+    width: 150px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded corners for the logo */
+}
+
+/* Ensure the form is positioned relative for proper logo placement */
+form {
+    position: relative; /* Allows positioning of the logo inside */
+}
+
+
+/* Clear button styling to match form width */
+.clear-button {
+    width: 100%; /* Full width matching the form */
+}
+
+/* Remove margin between buttons for uniformity */
+button + button {
+    margin-left: 0; /* No space between buttons */
+}
+
+/* Ensure the select and input fields have the same width */
+/* Ensure the select and input fields have the same width */
+#medicine,
+#quantity {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 9px; /* Ensure padding matches the form */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}

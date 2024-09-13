@@ -1,0 +1,160 @@
+/* Hero section styling */
+.hero {
+    width: 100%; /* Full width */
+    height: 400px; /* Fixed height */
+    background-image: url(wallpaperflare.com_wallpaper.jpg); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    margin-bottom: 100px; /* Space below the hero section */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Introduction section styling */
+.intro {
+    text-align: center; /* Center align text */
+    margin-bottom: 30px; /* Space below the introduction section */
+}
+
+/* Services section styling */
+.services {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space out items */
+    flex-wrap: wrap; /* Wrap items to the next line */
+}
+
+/* Individual service card styling */
+.services .service {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis */
+    background-color: #e9ecef; /* Light grey background */
+    margin: 5px; /* Space around service cards */
+    padding: 5px; /* Padding inside service cards */
+    text-align: center; /* Center align text */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Service image styling */
+.services .service img {
+    max-width: 30%; /* Max width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Bullet list section styling */
+.bullet-list-section, .numbered-list-section {
+    display: flex; /* Flexbox layout */
+    margin-top: 20px; /* Space above sections */
+    padding: 15px; /* Padding inside sections */
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Styling for unordered and ordered lists inside sections */
+.bullet-list-section ul, .numbered-list-section ol {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    list-style-position: inside; /* List items inside the container */
+}
+
+/* Additional styling for ordered lists */
+.Ordered_list {
+    padding-top: 10px; /* Space above ordered lists */
+}
+
+/* Styling for list items with images and links */
+.list-image-link {
+    display: inline-block; /* Inline block display */
+    margin-right: 15px; /* Space to the right of the image/link */
+}
+
+/* Flexbox layout for image and list items */
+.image-and-list {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    gap: 5px; /* Space between image and list */
+}
+
+/* Image styling inside the list */
+.list-image {
+    max-width: 150px; /* Max width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for unordered lists inside image and list sections */
+.image-and-list ul {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    list-style-position: inside; /* List items inside the container */
+}
+
+/* Styling for bullet list items */
+.bullet-list-section ul {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    list-style-position: inside; /* List items inside the container */
+}
+
+/* Space below list items */
+.bullet-list-section li {
+    margin-bottom: 10px; /* Space below list items */
+}
+
+/* Sub-section styling */
+.sub-section {
+    margin: 20px 0; /* Space above and below sub-sections */
+    padding: 15px; /* Padding inside sub-sections */
+    background-color: #e9ecef; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Title styling inside sub-sections */
+.sub-section-title {
+    font-size: 24px; /* Font size for titles */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+/* Content styling inside sub-sections */
+.sub-section-content {
+    display: flex; /* Flexbox layout */
+    align-items: flex-start; /* Align items to the start */
+}
+
+/* Image styling inside sub-sections */
+.sub-section-image {
+    max-width: 200px; /* Max width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 20px; /* Space to the right of the image */
+}
+
+/* Text styling inside sub-sections */
+.sub-section-text {
+    flex: 1; /* Flex-grow to fill available space */
+}
+
+/* Paragraph styling inside sub-sections */
+.sub-section-text p {
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Additional padding for .head-2 class */
+.head-2 {
+    padding-left: 10px; /* Space to the left */
+}
+/* Mobile styling: Image above text */
+@media (max-width: 768px) {
+    .sub-section-content {
+        flex-direction: column; /* Stack image on top of text */
+    }
+
+    .sub-section-image {
+        margin-right: 0; /* Remove right margin for mobile */
+        margin-bottom: 15px; /* Add bottom margin to image */
+        max-width: 100%; /* Make image take full width on mobile */
+    }
+}

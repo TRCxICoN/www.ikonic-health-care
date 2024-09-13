@@ -1,0 +1,97 @@
+/* Ensure the body and html take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flex container to push the footer to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Ensure the main content area grows to fill available space */
+main {
+    flex: 1; /* This makes the main section take up the remaining space */
+}
+
+/* Container for the billing summary section */
+.bill-summary {
+    padding: 20px; /* Space inside the container */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    margin: 20px; /* Space around the container */
+}
+
+/* Style for each billing item */
+.bill-item {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between item details and price */
+    margin-bottom: 10px; /* Space below each item */
+}
+
+/* Style for the item image */
+.item-image {
+    width: 50px; /* Width of the image */
+    height: 50px; /* Height of the image */
+    margin-right: 10px; /* Space between the image and the item details */
+}
+
+/* Container for item details (text) */
+.item-details {
+    display: flex; /* Align text in a column */
+    flex-direction: column; /* Stack text vertically */
+    flex: 1; /* Expand to fill available space */
+}
+
+/* Style for the item price */
+.item-price {
+    margin-left: 20px; /* Space between details and price */
+    text-align: right; /* Align price text to the right */
+    width: 100px; /* Fixed width for price container */
+}
+
+/* Style for section headers (e.g., h3) */
+h3 {
+    margin-top: 20px; /* Space above the header */
+    text-align: right; /* Align header text to the right */
+}
+
+/* Container for the total price */
+.total-container {
+    display: flex; /* Align items in a row */
+    justify-content: flex-end; /* Align total price to the right */
+    align-items: center; /* Center total price vertically */
+    margin-top: 20px; /* Space above the total container */
+}
+
+/* Style for the total price text */
+.total-price {
+    font-size: 18px; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+}
+
+/* Container for action buttons */
+.buttons {
+    margin-top: 20px; /* Space above the buttons */
+    text-align: right; /* Align buttons to the right */
+}
+
+/* Style for buttons */
+.btn {
+    display: inline-block; /* Inline block for spacing */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners for buttons */
+    margin-right: 10px; /* Space between buttons */
+}
+
+/* Style for button hover state */
+.btn:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}

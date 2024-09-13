@@ -1,0 +1,175 @@
+
+body {
+    background-color: #e9f7fe; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0; 
+    color: #333;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+/* Styling for header */
+header {
+    background-color: #007bff; 
+    padding: 50px; 
+    position: relative; 
+    display: flex;
+    align-items: center; 
+}
+
+/* Container for logo and navigation */
+.header-content {
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+}
+
+/* Styling for the logo and navigation container */
+.logo-nav-container {
+    position: absolute; 
+    left: 10px; /* Position from left edge */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+/* Logo styling */
+.logo {
+    max-height: 200px; /* Maximum height of logo */
+    max-width: 200px; /* Maximum width of logo */
+    margin-top: 45px; /* Margin from top */
+    margin-bottom: 5px; /* Margin from bottom */
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    display: flex; /* Flexbox layout */
+    margin-bottom: 65px; /* Margin at the bottom */
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    margin-top: 1px; /* Margin at the top */
+}
+
+/* Styling for navigation links */
+.nav-bar a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding around text */
+    display: block; /* Block display for full-width clickable area */
+}
+
+/* Hover effect for navigation links */
+.nav-bar a:hover {
+    background-color: #004494; /* Darker blue background on hover */
+}
+
+/* Hospital name styling */
+.hospital-name {
+    margin-top: -20px;
+    padding-left: 50px;
+    color: #121112; /* text color */
+    font-size: 40px; /* Font size */
+    text-align: center; /* Center align text */
+    width: 90%; /* Width of 90% */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .hospital-name {
+        padding-right: 60px;
+    }
+    .header-content {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .logo-nav-container {
+        position: static; /* Static positioning */
+        align-items: center; /* Center align items */
+        width: 100%; /* Full width */
+    }
+
+    .nav-bar {
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        width: 100%; /* Full width */
+    }
+
+    .nav-bar a {
+        padding: 10px; /* Padding around text */
+        width: 100%; /* Full width */
+        text-align: center; /* Center align text */
+        color: #fff; /* White text color */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    .nav-bar a:hover {
+        background-color: #004494; /* Darker blue background on hover */
+    }
+}
+
+/* Styling for content section */
+.content {
+    margin-top: 30px; /* Margin at the top */
+    padding: 20px; /* Padding around content */
+    flex: 1; /* Flex-grow to fill available space */
+}
+
+/* Styling for footer */
+footer {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding around footer content */
+}
+
+/* Container for footer content */
+.footer-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Padding on left and right */
+    width: 90%; /* Width of 90% */
+}
+
+/* Footer navigation styling (hidden by default) */
+.footer-nav {
+    display: none; /* Hidden by default */
+}
+
+/* Responsive styles for footer navigation on larger screens */
+@media (min-width: 769px) {
+    .footer-nav {
+        display: flex; /* Show footer navigation on larger screens */
+        justify-content: flex-end; /* Align items to the end */
+    }
+
+    .footer-nav a {
+        color: #fff; /* White text color */
+        text-decoration: none; /* Remove underline from links */
+        padding: 10px 15px; /* Padding around text */
+    }
+
+    .footer-nav a:hover {
+        background-color: #004494; /* Darker blue background on hover */
+    }
+
+    .footer-copyright {
+        text-align: left; /* Left align text */
+        flex: 1; /* Flex-grow to fill available space */
+    }
+}
+
+/* Responsive styles for footer on mobile devices */
+@media (max-width: 768px) {
+    .footer-nav {
+        display: none; /* Hide footer navigation on mobile */
+    }
+
+    .footer-copyright {
+        text-align: center; /* Center align text */
+        width: 100%; /* Full width */
+    }
+}

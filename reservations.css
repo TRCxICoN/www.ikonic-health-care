@@ -1,0 +1,113 @@
+/* Container for reservation section, with flex layout for responsive design */
+
+.reservation-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Limit width of the container */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* Style for contact information section */
+.contact-info {
+    height: 420px; /* Fixed height for contact section */
+    flex: 1; /* Allow this section to grow as needed */
+    background-color: #e9ecef; /* Light grey background */
+    padding: 20px; /* Padding inside the contact info box */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Style for reservation form section */
+.reservation-form {
+    flex: 2; /* Allow this section to take up more space */
+    max-height: 100%; /* Ensure the form doesn't exceed container height */
+    background-color: #fff; /* White background */
+    padding: 20px; /* Padding inside the form box */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Flex layout for form rows to allow spacing between fields */
+.form-row {
+    display: flex;
+    gap: 20px; /* Space between form groups */
+    margin-bottom: 20px; /* Space below each row */
+}
+
+/* Style for form groups, flex layout to stack label and input */
+.form-group {
+    flex: 1; /* Allow form groups to grow equally */
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+/* Style for form groups that should take more space */
+.form-group.full-width {
+    flex: 2; /* Take up more space in the layout */
+}
+
+/* Style for labels */
+label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Style for all form inputs and text areas */
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%; /* Full width of the parent container */
+    padding: 8px; /* Padding inside the input fields */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light grey border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Prevent textarea from being resized */
+textarea {
+    resize: none;
+}
+
+/* Style for submit button */
+.submit-btn {
+    display: inline-block; /* Button will not stretch to full width */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above the button */
+}
+
+/* Style for submit button on hover */
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .reservation-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack form fields vertically */
+    }
+
+    .contact-info {
+        display: none; /* Hide contact info on small screens */
+    }
+
+    .reservation-form {
+        flex: 1; /* Full width for the form */
+    }
+}
+footer {
+    height: 100px;/*footer height*/
+    padding: 10px 0; /* Padding on top and bottom */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width of the viewport */
+}
